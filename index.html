@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-<div id="testa"> <p>Dima POINT!</p></div>
+<div id="testa"> <p id="titolo">Dima POINT!</p></div>
 <div class="blocco">
-    <div class="punteggiouno"></div>
+    <div class="punteggiouno"><p id="punto1">0</p></div>
     <div class="fascia uno">
         <div id="bottone1">
-            <button class="bottoneuno">Punto!</button>
+            <button id="b1" class="bottoneuno">Punto!</button>
         </div>
     </div>
 </div>
@@ -20,14 +20,62 @@
 
 </div>
 <div class="blocco">
-    <div class="punteggiodue"></div>
+    <div class="punteggiodue"><p id="punto2">0</p></div>
     <div class="fascia due">
         <div id="bottone2">
-            <button class="bottonedue">Punto!</button>
+            <button id="b2" class="bottonedue">Punto!</button>
         </div>
     </div>
 </div>
-
-<div id="punteggioset"></div>
+<div>
+    <div id="punteggioset1"><p id="tot">0</p></div>
+    <div id="punteggioset2"><p id="tot2">0</p></div>
+</div>
 </body>
 </html>
+
+<script>
+    const myButton = document.getElementById("b1");
+    const myValue = document.getElementById("punto1");
+    const myOtherValue = document.getElementById("tot");
+    let valore = 0;
+    let clickCount = 0;
+    myButton.addEventListener("click", function() {
+        clickCount++;
+        if (clickCount <= 2) {
+            valore += 15;
+        } else if (clickCount == 3) {
+            valore += 10;
+        } else if (clickCount == 4) {
+            valore += 5;
+        } else if (clickCount == 5) {
+            valore = 0;
+            myOtherValue.textContent++;
+            clickCount = 0;
+        }
+        myValue.textContent = valore;
+    });
+</script>
+
+<script>
+    const myButtond = document.getElementById("b2");
+    const myValued = document.getElementById("punto2");
+    const myOtherValued = document.getElementById("tot2");
+    let valored = 0;
+    let clickCountd = 0;
+    myButtond.addEventListener("click", function() {
+        clickCountd++;
+        if (clickCountd <= 2) {
+            valored += 15;
+        } else if (clickCountd == 3) {
+            valored += 10;
+        } else if (clickCountd == 4) {
+            valored += 5;
+        } else if (clickCountd == 5) {
+            valored = 0;
+            myOtherValued.textContent++;
+            clickCountd = 0;
+        }
+        myValued.textContent = valored;
+    });
+</script>

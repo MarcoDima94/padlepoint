@@ -1,106 +1,152 @@
+@import url('https://fonts.googleapis.com/css2? family= Changa+One & family= Kanit & display=swap');
+    body {
+        background: #323432;
 
-body{
-    background: #CBD4C2;
-}
+    }
 
-p{
-    font-size: 100px;
-    margin-top: 30px ;
+    p {
+        font-size: 100px;
+        margin-top: 30px;
 
-}
+    }
 
-#testa{
-    text-align: center;
-    width: 100%;
-    height: 20vw;
-    background: #50514F;
-    margin: 0px;
-    border-radius: 0px 0px 30px 30px;
-    border: solid black 3px;
-}
+    #testa {
+        text-align: center;
+        color: white;
+        width: 100%;
+        height: 20vw;
+        background: #1E201E;
+        margin: 0px;
+        border-radius: 0px 0px 30px 30px;
+        border: solid lawngreen 3px;
+        box-shadow: 2px 2px 10px lawngreen;
+        font-family: 'Grechen Fuemen', cursive;
+        margin-bottom: 300px;
+    }
 
-.fascia{
-    height: 40vw;
-    width: 70vw;
-    background-color: #C3B299;
-    margin-top: 200px;
-    margin-bottom: 200px;
+    #titolo {
+        text-shadow: 2px 2px 10px lawngreen;
+    }
 
-}
+    .fascia {
+        height: 40vw;
+        width: 70vw;
+        background-color: #1E201E;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        border: solid lawngreen 3px;
+        box-shadow: 2px 2px 10px lawngreen;
 
-.uno{
-    border-radius:  0px 90px 90px 0px;
+    }
 
-
-}
-
-.due{
-    border-radius:  90px 0px 0px 90px;
-    position: relative;
-    left: 30vw;
+    .uno {
+        border-radius: 0px 90px 90px 0px;
 
 
-}
-#fasciaset{
-    background-color: #50514F;
-    height: 15vw;
-    width: 100vw;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border: solid black 3px;
-}
+    }
 
-.bottoneuno{
-    height: 30vw;
-    width: 30vw;
-    margin-top: 5vw;
-    position: relative;
-    left: 37vw;
-    border-radius: 50%;
-    background-color: red;
-    font-size: 50px;
+    .due {
+        border-radius: 90px 0px 0px 90px;
+        position: relative;
+        left: 30vw;
 
-}
 
-.bottonedue{
-    height: 30vw;
-    width: 30vw;
-    margin-top: 5vw;
-    position: relative;
-    right: 20vw;
-    border-radius: 50%;
-    background-color: blue;
-    font-size: 50px;
+    }
 
-}
+    #fasciaset {
+        background-color: #1E201E;
+        height: 15vw;
+        width: 100vw;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border: solid black 3px;
+        visibility: hidden;
+    }
 
-.punteggiouno{
-    height: 150px;
-    width: 20vw;
-    background-color: azure;
-    display: inline-block;
-    float: right;
-    margin-top: 13vw;
-    margin-right: 2vw;
-    border: solid black 3px;
-}
+    .bottoneuno {
+        height: 30vw;
+        width: 30vw;
+        margin-top: 5vw;
+        position: relative;
+        left: 37vw;
+        border-radius: 50%;
+        background-color: red;
+        font-size: 50px;
+        font-family: 'Grechen Fuemen', cursive;
+        box-shadow: 2px 2px 10px white;
+        border: solid white 3px;
+        transition: background-color 0.2s ease-in-out;
+    }
 
-.punteggiodue{
-    height: 150px;
-    width: 20vw;
-    background-color: azure;
-    display: inline-block;
-    float: left;
-    margin-top: 13vw;
-    margin-left: 4vw;
-    border: solid black 3px;
+    .bottoneuno:active {
+        box-shadow: inset 2px 2px 10px white;
+        background-color: #8F1F00;
+    }
 
-}
+    .bottonedue {
+        height: 30vw;
+        width: 30vw;
+        margin-top: 5vw;
+        position: relative;
+        right: 20vw;
+        border-radius: 50%;
+        background-color: blue;
+        font-size: 50px;
+        font-family: 'Grechen Fuemen', cursive;
+        box-shadow: 2px 2px 10px white;
+        border: solid white 3px;
+        transition: background-color 0.2s ease-in-out;
+    }
 
-#punteggioset{
-    height: 10vw;
-    width: 50vw;
-    background-color: azure;
-    margin-left: 25%;
-    border: solid black 3px;
-}
+    .bottonedue:active {
+        box-shadow: inset 2px 2px 10px white;
+        background-color: #00138F;
+    }
+
+    .punteggiouno {
+        height: 150px;
+        width: 20vw;
+        background-color: azure;
+        display: inline-block;
+        float: right;
+        margin-top: 13vw;
+        margin-right: 2vw;
+        border: solid black 3px;
+    }
+
+    .punteggiodue {
+        height: 150px;
+        width: 20vw;
+        background-color: azure;
+        display: inline-block;
+        float: left;
+        margin-top: 13vw;
+        margin-left: 4vw;
+        border: solid black 3px;
+
+    }
+
+    #punteggioset1 {
+        margin-left: 30vw;
+        color: red;
+    }
+
+    #punteggioset2 {
+        color: blue;
+    }
+
+    #punteggioset1, #punteggioset2 {
+        text-align: center;
+        height: 20vw;
+        width: 20vw;
+        background-color: azure;
+        border: solid black 3px;
+        display: inline-block;
+    }
+
+
+    #punto1, #punto2 {
+        text-align: center;
+    }
+
+
